@@ -88,9 +88,8 @@ mat_type inner_prod(const matrix<mat_type> &m1, const matrix<mat_type> &m2);
 template <class mat_type>
 class matrix
 {
-protected:
-	mat_type *data;
 public:
+	mat_type *data;
 	size_type nrow, ncol;
 private:
 	size_type *ref;
@@ -130,7 +129,7 @@ private:
 			}
 		}
 	}
-
+public:
 	/**
 	 * fill(r1, c1, r2, c2, src)
 	 *
@@ -1060,6 +1059,7 @@ template <typename mat_type>
 matrix<mat_type> operator*(const matrix<mat_type> &m1, const matrix<mat_type> &m2)
 {
 	matrix<mat_type> res;
+	/* exploit cache locality */
 	if(m1.ncol == m2.nrow)
 	{
 		res.zeros(m1.nrow, m2.ncol);
