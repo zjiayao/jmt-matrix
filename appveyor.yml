@@ -4,15 +4,7 @@ branches:
     only:
         - master
 
-environment:
-    JMT_ROOT: C:\jmt\
-
-install:
-    - cd %JMT_ROOT%
-    - git clone https://github.com/zjiayao/jmt-matrix
-
 platform: x64
 build_script:
-    - cd %JMT_ROOT%\jmt-matrix
     - make example
 
