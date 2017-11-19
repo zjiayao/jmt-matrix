@@ -1,5 +1,8 @@
 # jmt-matrix
 
+![Travis_status](https://travis-ci.com/zjiayao/jmt-matrix.svg?token=9cK4Kmeqpdioyfb1EXxS&branch=master)
+
+
 *Johnson's Math ToolBox: Linear Algebra Library*
 
 ## Introduction
@@ -27,6 +30,26 @@ Householder's Reflection is used for numerical robustness.
 
 This directly leads to the ability for matrix inversion.
 
+## Installation
+
+First, clone this repo using `git`:
+
+    git clone https://github.com/zjiayao/jmt-matrix
+
+Then `cd` to the repo and build example:
+
+    cd jmt-matrix && make example
+
+
+## Usage
+
+To use JMT Linear Algebra Library for operating on real numbers,
+include `dmatrix.hpp` in the header; analogously, include `cmatrix.hpp`
+for complex support.
+
+A sample program for calling common APIs is given in the
+`examples` folder.
+
 ## Features
 
 - Zero Dependency
@@ -40,7 +63,7 @@ manipulations.
 This library is written in template classes, that is,
 there is no need to compile or link before use.
 Directly include the
-desired headers (more in the next section) and compile, *voila*!
+desired headers (see previous section) and compile, *voila*!
 
 This also makes the library very easy to extend to
 other data types, for examples, 16bit floats, etc.
@@ -81,25 +104,7 @@ this gives:
 Of course, directly `std::cout` and `std::cin` (yes!) are supported.
 
 
-## Installation
 
-First, clone this repo using `git`:
-
-    git clone https://github.com/zjiayao/jmt-matrix
-
-Then `cd` to the repo and build example:
-
-    cd jmt-matrix && make example
-
-
-## Usage
-
-To use JMT Linear Algebra Library for operating on real numbers,
-include `dmatrix.hpp` in the header; analogously, include `cmatrix.hpp`
-for complex support.
-
-A sample program for calling common APIs is given in the
-`examples` folder.
 
 
 ## Claimer
