@@ -8,5 +8,6 @@ platform: x64
 build_script:
     - cmake -H. -Bbuild
     - cmake --build build
-    - .\build\example
+    - cd .\build\
+    - example
 
