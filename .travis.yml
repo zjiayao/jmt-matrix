@@ -4,3 +4,4 @@ complier:
     - gcc
 script:
     - make example
+    - ./example

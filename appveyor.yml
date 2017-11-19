@@ -13,5 +13,7 @@ install:
 
 platform: x64
 build_script:
-    - make example
+    - cmake -H. -Bbuild
+    - cmake --build build -- -j3
+    - ./build/example
 
