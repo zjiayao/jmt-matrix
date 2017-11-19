@@ -1,6 +1,9 @@
 # jmt-matrix
 
-![Travis_status](https://travis-ci.com/zjiayao/jmt-matrix.svg?token=9cK4Kmeqpdioyfb1EXxS&branch=master)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/zjiayao/jmt-matrix/blob/master/LICENSE)
+[![Travis_status](https://travis-ci.com/zjiayao/jmt-matrix.svg?token=9cK4Kmeqpdioyfb1EXxS&branch=master)](https://travis-ci.com/zjiayao/jmt-matrix)
+[![Appveyor status](https://ci.appveyor.com/api/projects/status/1b6cswqg350i4evh?svg=true)](https://ci.appveyor.com/project/zjiayao/jmt-matrix)
+[![Chat on Gitter](https://badges.gitter.im/zjiayao/pyTracer.svg)](https://gitter.im/zjiayao/jmt/)
 
 
 *Johnson's Math ToolBox: Linear Algebra Library*

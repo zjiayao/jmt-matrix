@@ -7,6 +7,6 @@ branches:
 platform: x64
 build_script:
     - cmake -H. -Bbuild
-    - cmake --build build -- -j3
+    - cmake --build build
     - ./build/example
 
