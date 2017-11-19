@@ -39,10 +39,17 @@ First, clone this repo using `git`:
 
     git clone https://github.com/zjiayao/jmt-matrix
 
-Then `cd` to the repo and build example:
+Then `cd` to the repo and build and run the example:
 
-    cd jmt-matrix && make example
+    cd jmt-matrix && make example && ./example
 
+For Windows users, a `CMakeList` is prepared, and thus
+one may build using `cmake`:
+
+    cd jmt-matrix
+    cmake -H. -Bbuild
+    cmake --build build
+    ./build/example
 
 ## Usage
 
@@ -55,7 +62,7 @@ A sample program for calling common APIs is given in the
 
 ## Features
 
-- Zero Dependency
+- Zero Dependency, Platform Dependent
 
 The whole library is self-contained, shipped
 with a dedicated complex library used for comlex
