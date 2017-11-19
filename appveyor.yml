@@ -1,0 +1,17 @@
+version: 0.0.{build}-{branch}
+
+branches:
+    only:
+        - master
+
+environment:
+    JMT_ROOT: C:\jmt\linear_algebra\
+
+install:
+    - cd %JMT_ROOT
+    - git clone https://github.com/zjiayao/jmt-matrix
+
+platform: x64
+build_script:
+    - make example
+
